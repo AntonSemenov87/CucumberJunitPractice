@@ -11,10 +11,12 @@ public class Driver {
 
     private static WebDriver driver;
 
+    // private Constructor
     private Driver() {
     }
 
 
+// method to give instance
 
     public static WebDriver getDriver(){
         if (driver == null) {
