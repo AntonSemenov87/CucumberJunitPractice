@@ -1,3 +1,4 @@
+@smartbearLogin
 Feature: SmartBear login verifications
 
   Agile Story: When user is on the login page of SmartBear, use should be able to login using correct test data
@@ -6,8 +7,8 @@ Feature: SmartBear login verifications
   1 - Only authenticated user should be able to login
   Link: http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/login.aspx
   Authentication test data:
-  Username: Test
-  Password: tester
+  Username: Tester
+  Password: test
   2 - User should see "Welcome, Tester!" displayed when logged in
 
   Scenario: As a user I should be able to login using authenticated data
