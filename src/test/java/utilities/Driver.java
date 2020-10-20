@@ -23,6 +23,17 @@ public class Driver {
             switch (Config.getProperty("browser")) {
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
+
+                    // Additional Chrome Options (optional):
+//                    ChromeOptions options = new ChromeOptions();
+//                    options.addArguments("--disable-popup-blocking");
+//                    options.addArguments("test-type");
+//                    options.addArguments("allow-running-insecure-content");
+//                    options.addArguments("disable-extensions");
+//                    options.addArguments("--ignore-certificate-errors");
+//                    options.addArguments("test-type=browser");
+//                    options.addArguments("disable-infobars");
+
                     driver = new ChromeDriver();
                     break;
                 case "firefox":
