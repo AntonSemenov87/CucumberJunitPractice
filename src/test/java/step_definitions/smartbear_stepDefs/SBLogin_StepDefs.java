@@ -1,4 +1,4 @@
-package steps.smartbear_stepDefs;
+package step_definitions.smartbear_stepDefs;
 
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;

@@ -1,4 +1,4 @@
-package steps;
+package step_definitions;
 
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -40,7 +40,7 @@ public class Google_StepDefs {
         Thread.sleep(2000);
         String expectedInTitleAfterSearch = "wooden spoon";
         String actualInTitleAfterSearch = Driver.getDriver().getTitle();
-        System.out.println("This is the title after search: " + actualInTitleAfterSearch);
+       // System.out.println("This is the title after search: " + actualInTitleAfterSearch);
         Assert.assertTrue("Title doesn't contain expected phrase", actualInTitleAfterSearch.contains(expectedInTitleAfterSearch));
     }
 

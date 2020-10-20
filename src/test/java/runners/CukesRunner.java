@@ -8,9 +8,9 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin = "html:target/cucumber-reports",
         features = "src/test/resources/features",
-        glue = "steps",
+        glue = "step_definitions",
         dryRun = false,
-        tags = "@CCEP"
+        tags = "@smokeTest"
 
 )
 
