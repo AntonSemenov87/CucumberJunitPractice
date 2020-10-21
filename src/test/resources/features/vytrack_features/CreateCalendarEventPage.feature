@@ -1,4 +1,4 @@
-@CCEP
+
 Feature: Activities Module: Create Calendar Events Page
 
   @defaultFieldsCCEP
