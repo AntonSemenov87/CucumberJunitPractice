@@ -1,24 +1,16 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/vytrack_features/CreateCalendarEventPage.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/etsy_features/etsySearching.feature");
 formatter.feature({
-  "name": "Activities Module: Create Calendar Events Page",
-  "description": "",
-  "keyword": "Feature",
-  "tags": [
-    {
-      "name": "@CCEP"
-    }
-  ]
+  "name": "Etsy search functionality",
+  "description": "  Agile story:\n  Jira #CBT-25",
+  "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "Verify Default Fields for Calendar Events Page",
+  "name": "Etsy search title verification",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@CCEP"
-    },
-    {
-      "name": "@defaultFieldsCCEP"
+      "name": "@etsy"
     }
   ]
 });
@@ -26,123 +18,15 @@ formatter.before({
   "status": "skipped"
 });
 formatter.step({
-  "name": "user is signed in as a sales manager",
+  "name": "user is on Etsy home page",
   "keyword": "Given "
 });
-formatter.match({
-  "location": "CreateCalendarEventsPageSteps.user_is_signed_in_as_a_sales_manager()"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "user is on All Calendar Events page under the Activities tab",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "CreateCalendarEventsPageSteps.user_is_on_All_Calendar_Events_page_under_the_Activities_tab()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user is taken to the Create Calendar Events page after clicking the Create Calendar Event",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "CreateCalendarEventsPageSteps.user_is_taken_to_the_Create_Calendar_Events_page_after_clicking_the_Create_Calendar_Event()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user should see their name as the default value if the owner field",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "CreateCalendarEventsPageSteps.user_should_see_their_name_as_the_default_value_if_the_owner_field()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user should see the title field to be empty by default",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "CreateCalendarEventsPageSteps.user_should_see_the_title_field_to_be_empty_by_default()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user should see start date field with default value of the current date",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "CreateCalendarEventsPageSteps.user_should_see_start_date_field_with_default_value_of_the_current_date()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user should see start time field with default value of the current time",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "CreateCalendarEventsPageSteps.user_should_see_start_time_field_with_default_value_of_the_current_time()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.after({
-  "status": "skipped"
-});
-formatter.scenario({
-  "name": "Verify Repeat Checkbox Options for Calendar Events Page",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@CCEP"
-    }
-  ]
-});
-formatter.before({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user is signed in as a sales manager",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "CreateCalendarEventsPageSteps.user_is_signed_in_as_a_sales_manager()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user is on All Calendar Events page under the Activities tab",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "CreateCalendarEventsPageSteps.user_is_on_All_Calendar_Events_page_under_the_Activities_tab()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user is taken to the Create Calendar Events page after clicking the Create Calendar Event",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "CreateCalendarEventsPageSteps.user_is_taken_to_the_Create_Calendar_Events_page_after_clicking_the_Create_Calendar_Event()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user clicks on Repeat checkbox",
+  "name": "user searches for wooden spoon",
   "keyword": "When "
 });
 formatter.match({});
@@ -150,7 +34,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "user should see Repeats select field with following options: Daily, Weekly, Monthly, Yearly",
+  "name": "user should see wooden spoon in Etsy title",
   "keyword": "Then "
 });
 formatter.match({});
