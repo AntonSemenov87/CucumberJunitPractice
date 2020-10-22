@@ -33,12 +33,12 @@ public class etsySearch_StepDefs {
 
 
     @When("user searches for {string}")
-    public void user_searches_for(String string) {
-
+    public void user_searches_for(String searchValue) {
+        etsy_homePage.searchBox.sendKeys(searchValue + Keys.ENTER);
     }
 
     @Then("user should see {string} in Etsy title")
-    public void user_should_see_in_Etsy_title(String string) {
+    public void user_should_see_in_Etsy_title(String searchValue) {
 
     }
 }
