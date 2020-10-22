@@ -19,3 +19,5 @@ Feature: Etsy search functionality
     Given user is on Etsy home page
     When user searches for "custom wooden spoon"
     Then user should see "Custom wooden spoon" in Etsy title
+
+
