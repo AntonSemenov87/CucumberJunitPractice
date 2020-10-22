@@ -21,12 +21,14 @@ formatter.step({
   "name": "user is on Etsy home page",
   "keyword": "Given "
 });
-formatter.match({});
+formatter.match({
+  "location": "etsySearch_StepDefs.user_is_on_Etsy_home_page()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "user searches for wooden spoon",
+  "name": "user searches for \"wooden spoon\"",
   "keyword": "When "
 });
 formatter.match({});
@@ -34,7 +36,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "user should see wooden spoon in Etsy title",
+  "name": "user should see \"wooden spoon\" in Etsy title",
   "keyword": "Then "
 });
 formatter.match({});

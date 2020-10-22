@@ -25,9 +25,20 @@ public class etsySearch_StepDefs {
 
     @Then("user should see wooden spoon in Etsy title")
     public void user_should_see_wooden_spoon_in_Etsy_title() {
-        String expectedInTitle = "wooden spoon";
+        String expectedInTitle = "Wooden spoon";
         String actualInTitle = Driver.getDriver().getTitle();
 
         Assert.assertTrue(actualInTitle.contains(expectedInTitle));
+    }
+
+
+    @When("user searches for {string}")
+    public void user_searches_for(String string) {
+
+    }
+
+    @Then("user should see {string} in Etsy title")
+    public void user_should_see_in_Etsy_title(String string) {
+
     }
 }
