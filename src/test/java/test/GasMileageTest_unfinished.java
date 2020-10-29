@@ -12,7 +12,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.text.DecimalFormat;
 
-public class GasMileageTest {
+public class GasMileageTest_unfinished {
     XSSFWorkbook workbook;
     XSSFSheet sheet;
     FileInputStream fileInputStream;
@@ -57,11 +57,41 @@ public class GasMileageTest {
         DecimalFormat decimalFormat = new DecimalFormat("#0.00");
         System.out.println("Fromatted version: " + decimalFormat.format(expectedResult));
 
+        // creates the cell if current cell is empty (null)
+        // sending expected value from our formula
+        if (currentRow.getCell(4) == null) {
+            currentRow.createCell(4);
+        }
+        if (currentRow.getCell(5) == null) {
+            currentRow.createCell(5);
+        }
+
+
+        currentRow.createCell(4).setCellValue(decimalFormat.format(expectedResult));
+        currentRow.createCell(5).setCellValue(actualResult[0]);
+
+
         if (String.valueOf(decimalFormat.format(expectedResult)).equals(actualResult[0])) {
+            if (currentRow.getCell(6) == null) {
+                currentRow.createCell(6);
+            }
+            currentRow.getCell(6).setCellValue("Pass");
             System.out.println("Pass");
         } else {
-            System.out.println("False");
+            if (currentRow.getCell(6) == null) {
+                currentRow.createCell(6);
+            }
+            currentRow.getCell(6).setCellValue("Fail");
+            System.out.println("Fail");
         }
+
+        fileOutputStream = new FileOutputStream(path);
+        workbook.write(fileOutputStream);
+
+        workbook.close();
+        fileOutputStream.close();
+        fileInputStream.close();
+
 
 
 
