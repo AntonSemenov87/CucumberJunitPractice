@@ -92,9 +92,6 @@ public class GasMileageTest_unfinished {
         fileOutputStream.close();
         fileInputStream.close();
 
-
-
-
     }
 
 }
